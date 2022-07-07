@@ -18,7 +18,7 @@ class Find extends Component {
         this.handleHour = this.handleHour.bind(this);
         this.handleMeal = this.handleMeal.bind(this);
         this.handleLoc = this.handleLoc.bind(this);
-        this.handleSubmit = this.handleLoc.Submit(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleType(key) {
@@ -48,7 +48,7 @@ class Find extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        
+
     }
     render() {
         return (
@@ -88,7 +88,7 @@ class Find extends Component {
 
                 </DropdownButton>
 
-                <Button onSubmit={this.handleSubmit} variant="outline-primary">Search for {this.state.type} for {this.state.hour} with {this.state.meal} in {this.state.loc} </Button>{' '}
+                <Button onSubmit={e => this.handleSubmit} variant="outline-primary">Search for {this.state.type} for {this.state.hour} with {this.state.meal} in {this.state.loc} </Button>{' '}
 
 
             </div>
