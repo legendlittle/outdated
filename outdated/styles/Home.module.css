@@ -108,6 +108,11 @@
   margin-left: 0.5rem;
 }
 
+.datelink {
+  color: red;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
